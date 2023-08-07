@@ -1,4 +1,5 @@
 import Select from "@/comp/Select";
+import { useState } from "react";
 
 const options = [
   { label: "first", value: "first" },
@@ -10,9 +11,12 @@ const options = [
 ];
 
 function App() {
+  const [value, setValue] = useState<(typeof options)[0] | undefined>(
+    options[0]
+  );
   return (
     <div className="flex items-center justify-center h-[10vh]">
-      <Select value={""} onChange={() => {}} options={options} />
+      <Select value={value} onChange={() => {}} options={options} />
     </div>
   );
 }
