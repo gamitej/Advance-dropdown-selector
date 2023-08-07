@@ -78,3 +78,8 @@
 .option.selected {
   background-color: hsl(200, 100%, 70%);
 }
+
+.option:hover {
+  background-color: hsl(200, 100%, 50%);
+  color: white;
+}

@@ -16,7 +16,7 @@ function App() {
   );
   return (
     <div className="flex items-center justify-center h-[10vh]">
-      <Select value={value} onChange={() => {}} options={options} />
+      <Select value={value} onChange={(o) => setValue(o)} options={options} />
     </div>
   );
 }
